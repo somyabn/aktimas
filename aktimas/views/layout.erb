@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Awesome Contact Form</title>
+	<link rel="stylesheet" type "text/css" href="css/main.css">
+	<title>Aktimas</title>
 </head>
 <body>
-	
+<nav>
+	<% links = {"hello"=>"/hello", "ask"=>"/ask", "home"=>"/"}%>
+	<nav>
+		<ul>
+			<% for key, value in links do %>
+				<li> <a href="<%=value%>"> <%= key %></a></li>
+			<% end %>
+		</ul>
+	</nav>
+
 	<%=yield%>
+
+<footer>Contact Info: </footer>
 
 </body>
 
