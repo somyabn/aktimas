@@ -9,8 +9,12 @@ get '/about' do
 	erb :about
 end
 
-get '/testimony' do
-	erb :testimony
+get '/products' do
+	erb :products
+end
+
+get '/careers' do
+	erb :careers
 end
 
 get '/contact_us' do 

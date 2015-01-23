@@ -2,23 +2,25 @@
 <html>
 <head>
 	<link rel="stylesheet" type "text/css" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<title>Aktimas</title>
 </head>
 <body>
-<nav>
-	<% links = {"hello"=>"/hello", "ask"=>"/ask", "home"=>"/"}%>
-	<nav>
-		<ul>
-			<% for key, value in links do %>
-				<li> <a href="<%=value%>"> <%= key %></a></li>
-			<% end %>
-		</ul>
+	<nav class="top-navigation">
+		<div class="content">
+			<ul class="links">
+			<% links = {"Home"=>"/", "About Us"=>"/about", "Products"=>"/products", "Careers"=>"careers", "Contact Us"=>"contact_us"}%>
+				<% for key, value in links do %>
+					<li class="active"> <a href="<%=value%>"> <%= key %></a></li>
+				<% end %>
+			</ul>
+		<img class="logo" src="images/logo.jpg" alt="Logo Image" height="100px">
+		</div>
 	</nav>
 
 	<%=yield%>
 
-<footer>Contact Info: </footer>
-
 </body>
+
 
 </html>
