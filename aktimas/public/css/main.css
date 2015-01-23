@@ -50,6 +50,18 @@ a{
 color:black
 }
 
+/*Home Page*/
+.home_text{
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	margin-left: 196px;
+	overflow: hidden;
+	z-index: 900;
+	background: white;
+	padding-bottom: 20px;
+}
+
 /*About Aktimas Page*/
 .about_text{
 	position: relative;
