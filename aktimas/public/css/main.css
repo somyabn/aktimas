@@ -1,7 +1,8 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	width:1024px;
-	margin-top: 0px
+	margin-top: 0px;
+	color:black;
 }
 
 .main-content {
@@ -57,15 +58,47 @@ color:black
 }
 
 /*Home Page*/
-.home_text{
+.home-heading{
 	position: relative;
 	font-family: 'Roboto', sans-serif;
 	display: block;
-	margin-left: 196px;
+	margin-left: 200px;
 	overflow: hidden;
 	z-index: 900;
 	background: white;
-	padding-bottom: 20px;
+}
+
+.home-content{
+	margin-top: 550px;
+	margin-left: 50px;
+	margin-right: 80px;
+}
+
+.home-image{
+	margin-left: 100px;
+}
+
+#scroller {
+    position: relative;
+}
+#scroller .innerScrollArea {
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    }
+#scroller ul {
+    padding: 0;
+    margin-top: 10px;
+    position: relative;
+}
+#scroller li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
 }
 
 /*About Aktimas Page*/
@@ -158,7 +191,7 @@ font-size: bold;
 }
 .productDescription
 {
-	color:#0066CC;
+	color:black;
 	font-family: 'Roboto', sans-serif;
 }
 nav{
