@@ -1,0 +1,218 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	width:1024px;
+	margin-top: 0px
+}
+
+.main-content {
+	margin-top: 120px;
+}
+
+.top-navigation{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom:1px solid #DDD;
+    z-index: 9999;
+    display:block;
+    top: 0;
+    left: 0;
+}
+.top-navigation>.content{
+    width: 970px;
+    height:100px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.top-navigation .content h1{
+	display: inline-block;
+}
+.top-navigation .links {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 18px;
+    margin-top: 40px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+a:-webkit-any-link {
+text-decoration: none;
+cursor: auto;
+}
+
+a{
+color:black
+}
+
+/*Home Page*/
+.home_text{
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	margin-left: 196px;
+	overflow: hidden;
+	z-index: 900;
+	background: white;
+	padding-bottom: 20px;
+}
+
+/*About Aktimas Page*/
+.about_text{
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	margin-left: 196px;
+	overflow: hidden;
+	z-index: 900;
+	background: white;
+	padding-bottom: 20px;
+}
+
+.history{
+	position: relative;
+	margin-left: 20px;
+	overflow: hidden;
+	z-index: 900;
+	background: white;
+	font-size: 23px;
+	color: #009f7b;
+	line-height: 1.0em;
+	letter-spacing: 0.1em;
+}
+
+#content {
+	position: fixed;
+	top: 50px;
+	width: 196px;
+	z-index: 10;
+}
+
+#content .wrap {
+max-width: 1300px;
+padding: 66px 0 200px;
+}
+
+.wrap {
+position: relative;
+margin: 0 auto;
+}
+
+#content .side-left ul.subnav {
+margin-left: 30px;
+font-size: 100px;
+}
+
+#content .side-left ul.subnav li {
+margin-bottom: 20px;
+line-height: 1.4em;
+}
+
+li {
+list-style: none;
+display: list-item;
+text-align: -webkit-match-parent;
+}
+
+#content .side-left ul.subnav {
+margin-left: 30px;
+font-size: 15px;
+font-size: bold;
+}
+
+/*Products Page*/
+
+#mainIcon{
+    float:left;
+   padding:0px;
+   margin:0px;
+   display:inline;
+   width:75%;
+   height:75%;
+
+}
+.contentHead
+{
+	color:#0033CC;
+	font-family: 'Roboto', sans-serif;
+	font-size: 
+
+}
+.contentSpan{
+	color:#0033CC;
+	font-family: 'Roboto', sans-serif;
+	display:inline; 
+	font-style:none;
+
+}
+.productDescription
+{
+	color:#0066CC;
+	font-family: 'Roboto', sans-serif;
+}
+nav{
+	float:right;
+top: 0px;
+}
+table {
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    position:relative;
+    margin-top: 50px;
+}
+
+th {
+    height: 50px;
+}
+td {
+    padding: 15px;
+}
+table, td, th {
+    
+}
+
+th {
+   
+    opacity:0.5;
+    color:#3399FF;
+}
+.prdimg,.textinput
+{
+	color:#3399FF;
+}
+
+#prdimg
+{
+	position:fixed;
+	margin-top:0px;
+	height:100%;
+	width:100%;
+	padding:0px;
+	opacity:0.4;
+	border-top: 0px;
+}
+#download,.filesub
+{
+	 background-color:#3399FF;
+    opacity:0.9;
+    color: white;
+    width:300px; 
+    height:30px;
+    border-radius:2px;
+}
+
+
