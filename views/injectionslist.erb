@@ -1,0 +1,31 @@
+<div class="main-content">
+<div class="injectionlist">
+<div><img id="prdimg" src="/images/productimg.jpg" alt=""></div>
+<div><h1 class="prdimg">Injections List</h1></div>
+<table style="width:100%">
+<tr>
+<th>SN</th>
+    <%@product1['SN'].each do |sn|%>
+     <td><%= sn %></td> 
+		<% end %>
+	</tr>     
+   <tr>
+    <th>Composition</th>
+    <%@product1['Composition'].each do |composition|%>
+    <td><%= composition %></td> 
+      <% end %>
+ </tr> 
+  <tr>
+    <th>Pack</th>
+  <%@product1['Pack'].each do |pack|%>
+   <td><%= pack %></td> 
+   <% end %>
+ </tr>  
+  </table>
+  <form>
+  <input id="download" type="button" value="Download Complete Product Catalog." onClick="window.location.href='/data/ProductsCatalog.zip'">
+</form>
+</div>
+ <div class="clearfix"></div>
+ </div>
+

@@ -1,6 +1,5 @@
 require 'sinatra'
-require 'CSV'
-require_relative './CSVfileProcess.rb'
+require 'mandrill'
 
 get '/' do
 	erb :home
@@ -38,23 +37,6 @@ get '/tablets' do
 	erb :tablets
 end
 
-get '/injectionslist' do
-	@product1= csvfileProcess('InjectionsName.csv')
-	erb :injectionslist
-end
-
-get '/powderslist' do
-	@product2= csvfileProcess('PowdersName.csv')
-	erb :powderslist
-end
-get '/syrupslist' do
-	@product3= csvfileProcess('SyrupsName.csv')
-	erb :syrupslist
-end
-get '/tabletslist' do
-	@product4= csvfileProcess('TabletsName.csv')
-	erb :tabletslist
-end
 
 post '/contact' do
 	# puts "my params are:" + params.inspect
@@ -79,6 +61,7 @@ post '/contact' do
 	puts sending
 	redirect to ('/thanks')
 end
+
 get '/thanks' do 
 	erb :thanks
 end
