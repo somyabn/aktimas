@@ -22,22 +22,6 @@ get '/contact_us' do
 	erb :contact_us
 end
 
-get '/injections' do
-	erb :injections
-end
-
-get '/powders' do
-	erb :powders
-end
-
-get '/syrups' do
-	erb :syrups
-end
-
-get '/tablets' do
-	erb :tablets
-end
-
 get '/injectionslist' do
 	@product1= csvfileProcess('InjectionsName.csv')
 	erb :injectionslist
