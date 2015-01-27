@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type='text/javascript' src='js/jquery-2.1.3.min.js'></script>
+	<script type=text/javascript src=js/index.js></script>
+
+	<link rel="stylesheet" type "text/css" href="css/main.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	
+	<title>Aktimas</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<nav class="top-navigation">
+		<div class="content">
+			<ul class="links">
+			<% links = {"Home"=>"/", "About Us"=>"/about", "Products"=>"/products", "Careers"=>"careers", "Contact Us"=>"contact_us"}%>
+				<% for key, value in links do %>
+					<li class="active"> <a href="<%=value%>"> <%= key %></a></li>
+				<% end %>
+			</ul>
+		<img class="logo" src="images/logo.jpg" alt="Logo Image" height="100px">
+		</div>
+	</nav>
+
+	<%=yield%>
+
+</body>
+
+
+</html>
