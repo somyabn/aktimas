@@ -158,12 +158,12 @@ font-size: bold;
 /*Products Page*/
 
 #mainIcon{
-    float:left;
+   float:left;
    padding:0px;
    margin:0px;
    display:inline;
-   width:75%;
-   height:75%;
+   width:40%;
+   height:30%;
 
 }
 .contentHead
@@ -232,7 +232,7 @@ th {
 }
 #download,.filesub
 {
-	 background-color:#3399FF;
+	background-color:#3399FF;
     opacity:0.9;
     color: white;
     width:300px; 
