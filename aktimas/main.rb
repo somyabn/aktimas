@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'mandrill'
-require 'CSV'
+# require 'CSV'
 require_relative './CSVfileProcess.rb'
 
 configure(:development){set :database, "sqlite3:contact.sqlite3"}
