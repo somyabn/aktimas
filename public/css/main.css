@@ -1,6 +1,12 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	width:1024px;
+	margin-top: 0px;
+	color:black;
+}
+
+h1, h2{
+	color: #000066;
 	margin-top: 0px
 }
 
@@ -57,6 +63,35 @@ color:black
 }
 
 /*Home Page*/
+.home-heading{
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	margin-left: 200px;
+	overflow: hidden;
+	z-index: 900;
+	background: white;
+}
+
+.home-content{
+	margin-top: 400px;
+	margin-left: 50px;
+	margin-right: 80px;
+}
+
+.container
+{
+    position:relative;
+    margin-left:200px;
+}
+
+.container img
+{
+   position:absolute;
+   top:0;
+   left:0;
+}
+
 .home_text{
 	position: relative;
 	font-family: 'Roboto', sans-serif;
@@ -72,25 +107,14 @@ color:black
 .about_text{
 	position: relative;
 	font-family: 'Roboto', sans-serif;
+	width: 800px;
 	display: block;
-	margin-left: 196px;
+	margin-left: 100px;
 	overflow: hidden;
 	z-index: 900;
-	background: white;
 	padding-bottom: 20px;
 }
 
-.history{
-	position: relative;
-	margin-left: 20px;
-	overflow: hidden;
-	z-index: 900;
-	background: white;
-	font-size: 23px;
-	color: #009f7b;
-	line-height: 1.0em;
-	letter-spacing: 0.1em;
-}
 
 #content {
 	position: fixed;
@@ -134,23 +158,23 @@ font-size: bold;
 /*Products Page*/
 
 #mainIcon{
-    float:left;
+   float:left;
    padding:0px;
    margin:0px;
    display:inline;
-   width:75%;
-   height:75%;
+   width:40%;
+   height:30%;
 
 }
 .contentHead
 {
-	color:#0033CC;
+	color:#000066;
 	font-family: 'Roboto', sans-serif;
 	font-size: 
 
 }
 .contentSpan{
-	color:#0033CC;
+	color:#000066;
 	font-family: 'Roboto', sans-serif;
 	display:inline; 
 	font-style:none;
@@ -158,13 +182,14 @@ font-size: bold;
 }
 .productDescription
 {
-	color:#0066CC;
+	color:black;
 	font-family: 'Roboto', sans-serif;
 }
 nav{
 	float:right;
 top: 0px;
 }
+
 table {
     border-collapse: collapse;
 }
@@ -188,11 +213,11 @@ table, td, th {
 th {
    
     opacity:0.5;
-    color:#3399FF;
+    color:black;
 }
 .prdimg,.textinput
 {
-	color:#3399FF;
+	color:black;
 }
 
 #prdimg
@@ -207,12 +232,10 @@ th {
 }
 #download,.filesub
 {
-	 background-color:#3399FF;
+	background-color:#3399FF;
     opacity:0.9;
     color: white;
     width:300px; 
     height:30px;
     border-radius:2px;
 }
-
-

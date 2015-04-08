@@ -1,23 +1,23 @@
 <div class="main-content">
 <div class="tabletsMain">
 <div><img id="prdimg" src="/images/productimg.jpg" alt=""></div>
-<div><h1 class="prdimg">Tablets and Capsules List</h1></div>
+<div><h1 class="prdimg">Syrups List</h1></div>
 <table style="width:100%">
 <tr>
 <th>SN</th>
-    <%@product4['SN'].each do |sn|%>
+    <%@product3['SN'].each do |sn|%>
      <td><%= sn %></td> 
     <% end %>
   </tr>     
    <tr>
     <th>Composition</th>
-    <%@product4['Composition'].each do |composition|%>
+    <%@product3['Composition'].each do |composition|%>
     <td><%= composition %></td> 
       <% end %>
  </tr> 
   <tr>
     <th>Pack</th>
-  <%@product4['Pack'].each do |pack|%>
+  <%@product3['Pack'].each do |pack|%>
    <td><%= pack %></td> 
    <% end %>
  </tr>  

@@ -1,5 +1,9 @@
 require 'sinatra'
 require 'mandrill'
+# require 'CSV'
+require_relative './CSVfileProcess.rb'
+
+configure(:development){set :database, "sqlite3:contact.sqlite3"}
 
 get '/' do
 	erb :home
@@ -21,22 +25,23 @@ get '/contact_us' do
 	erb :contact_us
 end
 
-get '/injections' do
-	erb :injections
+get '/injectionslist' do
+	@product1= csvfileProcess('InjectionsName.csv')
+	erb :injectionslist
 end
 
-get '/powders' do
-	erb :powders
+get '/powderslist' do
+	@product2= csvfileProcess('PowdersName.csv')
+	erb :powderslist
 end
-
-get '/syrups' do
-	erb :syrups
+get '/syrupslist' do
+	@product3= csvfileProcess('SyrupsName.csv')
+	erb :syrupslist
 end
-
-get '/tablets' do
-	erb :tablets
+get '/tabletslist' do
+	@product4= csvfileProcess('TabletsName.csv')
+	erb :tabletslist
 end
-
 
 post '/contact' do
 	# puts "my params are:" + params.inspect

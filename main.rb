@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'mandrill'
 require 'CSV'
 require_relative './CSVfileProcess.rb'
 
